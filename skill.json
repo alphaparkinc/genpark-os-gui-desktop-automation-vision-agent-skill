@@ -1,0 +1,38 @@
+{
+  "name": "genpark-os-gui-desktop-automation-vision-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - OS GUI desktop automation vision agent executing keyboard-mouse actions from screenshot observations.",
+  "author": "genpark",
+  "category": "gui-automation",
+  "tags": [
+    "computer-use",
+    "os-world",
+    "gui-agent",
+    "desktop-automation",
+    "visual-grounding"
+  ],
+  "inputs": {
+    "screenshot_image_url": {
+      "type": "string"
+    },
+    "task_objective": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "action_plan_id": {
+      "type": "string"
+    },
+    "keyboard_mouse_action_sequence": {
+      "type": "array"
+    },
+    "visual_grounding_accuracy_pct": {
+      "type": "number"
+    },
+    "execution_audit_trace_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
